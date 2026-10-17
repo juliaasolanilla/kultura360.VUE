@@ -1,9 +1,13 @@
-<template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/galeria">Galeria</router-link> |
-    <router-link to="/contacte">Contacte</router-link>
-  </nav>
 
-  <router-view />
+<script setup>
+import Navbar from './components/Navbar.vue'
+import Footer from './components/Footer.vue'
+</script>
+
+<template>
+  <div class="site-shell">
+    <Navbar />
+    <RouterView />
+    <Footer />
+  </div>
 </template>
